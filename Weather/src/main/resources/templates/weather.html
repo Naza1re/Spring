@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <style>
+    body {
+      background-color: #111111;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      padding: 50px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    span {
+      font-weight: bold;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+<h1>Weather</h1>
+<h2>City: <span th:text="${city}"></span> </h2>
+<h2>Temperature: <span th:text="${temperature}"></span> C</h2>
+<h2>Feels like: <span th:text="${feelsLike}"></span> C</h2>
+<h2>Pressure: <span th:text="${pressure}"></span> </h2>
+</body>
+</html>
